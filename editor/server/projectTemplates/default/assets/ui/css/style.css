@@ -1,0 +1,70 @@
+a, a:-webkit-any-link {
+    text-decoration:none;
+    color:#fff;
+}
+
+*, *:hover, *:active, *:focus{ -webkit-tap-highlight-color: rgba(0,0,0,0);}
+html,body{ width:100%; height:100%; }
+body{ overflow:hidden; }
+
+body, div, span, ul, ol, li, h1, h2, h3, h4, h5, h6, input, p, img{
+    color: #ffffff; margin:0; padding:0; outline:none;
+    -webkit-touch-callout: none;
+    -webkit-user-select:none; -khtml-user-select:none; -moz-user-select:none; -o-user-select:none; user-select:none;
+    font: normal 12px/1.25 "Trebuchet MS", Arial, sans-serif;
+}
+
+#view { position: relative; width: 100%; height:100%; background-color:#555; }
+
+#loading_scr {
+    position:absolute;
+    width:100%;
+    height:100%;
+    background-color: #eaecee;
+    z-index: 10000;
+}
+#loading_scr .game_logo{
+    position:absolute;
+    top:45%;
+    left:50%;
+    margin-top:-123px;
+    margin-left:-92px;
+}
+#loading_scr .game_logo .logo{
+    width:190px;
+    height:247px;
+}
+
+#blankScreen {
+    position:absolute;
+    z-index:10000;
+    width:100%;
+    height:100%;
+    background-color: #eaecee;
+}
+
+#blankScreen .logo {
+    position:absolute;
+    width:160px;
+    height:208px;
+    top:50%;
+    left:50%;
+    margin:-104px 0 0 -80px;
+    background:url("../img/wolfy.png");
+}
+
+#mightyError { display: none; position: relative; z-index: 11000; }
+.glow-shadow { -moz-box-shadow: #000 0 10px 20px; -webkit-box-shadow: #000 0 10px 20px; box-shadow: #000 0 0 20px; }
+.alert { width: 100%; color: #ffd800; font-size: 11px; overflow: hidden; }
+.alert .alert-message { padding: 20px 0px 20px 20px; min-height: 30px }
+.alert .alert-message .title strong { font-size: 14px; }
+.alert .alert-message a { color: #ffd800; }
+.alert p.title { margin: 0 0 0.5em 0; }
+.alert p { line-height: 1.25; margin: 0 0 .75em 0; }
+.alert ul:last-child,
+.alert p:last-child { margin-bottom: 0; }
+.alert ul { line-height: 1.25; margin: 0 0 .75em 0; padding: 0 0 0 24px; color: #c4bdb0; }
+.alert ul li { list-style: disc; padding: 1px; color: #c4bdb0;}
+.alert ul:last-child { margin-bottom: 0; }
+.alert.error .alert-inner { background: #732e03 url("../img/alert_error.png") 0 0 repeat-x; }
+.alert.error p.title { color: #fff; }

@@ -1,0 +1,372 @@
+{
+	"1": {
+		"items": {
+			"1": {
+				"id": 1,
+				"branch": 1,
+				"type": "Texture",
+				"data": {
+					"id": 1,
+					"name": "null",
+					"type": "__enum__.Import.Resource.Type.TEXTURE",
+					"image": "null.png",
+					"editor": {
+						"color": "#ffffff",
+						"group": "core",
+						"sort": 0,
+						"branch": 1,
+						"type": "Texture",
+						"origin": "",
+						"plugin": "Resource"
+					},
+					"width": 64,
+					"height": 64
+				}
+			},
+			"2": {
+				"id": 2,
+				"branch": 1,
+				"type": "Texture",
+				"data": {
+					"id": 2,
+					"name": "null_iso",
+					"type": "__enum__.Import.Resource.Type.TEXTURE",
+					"image": "null_iso.png",
+					"editor": {
+						"color": "#ffffff",
+						"group": "core",
+						"sort": 0,
+						"branch": 1,
+						"type": "Texture",
+						"plugin": "Resource"
+					},
+					"width": 90,
+					"height": 45
+				}
+			},
+			"3": {
+				"id": 3,
+				"branch": 1,
+				"type": "Texture",
+				"data": {
+					"id": 3,
+					"name": "error",
+					"type": "__enum__.Import.Resource.Type.TEXTURE",
+					"image": "62.png",
+					"editor": {
+						"color": "#ffffff",
+						"group": "core",
+						"sort": 0,
+						"branch": 1,
+						"type": "Texture",
+						"origin": "",
+						"plugin": "Resource"
+					},
+					"width": 64,
+					"height": 64
+				}
+			},
+			"4": {
+				"id": 4,
+				"branch": 1,
+				"type": "Brush",
+				"data": {
+					"id": 4,
+					"name": "null",
+					"type": "__enum__.Import.Brush.Type.BASIC",
+					"texture": "1",
+					"head": {
+						"offsetX": 0,
+						"offsetY": 0,
+						"gridSizeX": 1,
+						"gridSizeY": 1
+					},
+					"footer": {
+						"available": [],
+						"stages": []
+					},
+					"body": {
+						"type": "__enum__.Import.GameObject.UNKNOWN",
+						"layerIndex": 0,
+						"fillType": "__enum__.Import.Terrain.FillType.DEFAULT",
+						"isModifier": 0,
+						"isUpdatePreview": 0
+					},
+					"editor": {
+						"color": "#ffffff",
+						"group": "core",
+						"sort": 0,
+						"branch": 1,
+						"type": "Brush",
+						"origin": "",
+						"plugin": "Brush"
+					}
+				}
+			},
+			"5": {
+				"id": 5,
+				"branch": 1,
+				"type": "Brush",
+				"data": {
+					"id": 5,
+					"name": "error",
+					"type": "__enum__.Import.Brush.Type.BASIC",
+					"texture": 3,
+					"head": {
+						"offsetX": 0,
+						"offsetY": 0,
+						"gridSizeX": 1,
+						"gridSizeY": 1
+					},
+					"footer": {
+						"stages": []
+					},
+					"editor": {
+						"color": "#ffffff",
+						"group": "core",
+						"sort": 0,
+						"branch": 1,
+						"type": "Brush",
+						"origin": "",
+						"plugin": "Brush"
+					}
+				}
+			},
+			"6": {
+				"id": 6,
+				"branch": 1,
+				"type": "Entity",
+				"data": {
+					"id": 6,
+					"name": "null",
+					"type": "__enum__.Import.Entity.Type.GEOMETRY",
+					"brush": 4,
+					"body": {
+						"isSaved": true,
+						"type": "__enum__.Import.GameObject.UNKNOWN",
+						"depthIndex": 0,
+						"isVisible": true,
+						"isPaused": false,
+						"isPickable": false,
+						"gridSizeX": 1,
+						"gridSizeY": 1,
+						"useGrid": true
+					},
+					"footer": {
+						"available": [],
+						"component": []
+					},
+					"editor": {
+						"color": "#ffffff",
+						"group": "core",
+						"sort": 0,
+						"branch": 1,
+						"type": "Entity",
+						"origin": "",
+						"plugin": "Entity"
+					}
+				}
+			},
+			"7": {
+				"id": 7,
+				"branch": 1,
+				"type": "Entity",
+				"data": {
+					"id": 7,
+					"name": "error",
+					"type": "__enum__.Import.Entity.Type.GEOMETRY",
+					"brush": 5,
+					"body": {
+						"isSaved": true,
+						"type": "__enum__.Import.GameObject.UNKNOWN",
+						"depthIndex": 0,
+						"isVisible": true,
+						"isPaused": false,
+						"isPickable": false,
+						"gridSizeX": 1,
+						"gridSizeY": 1,
+						"useGrid": true
+					},
+					"footer": {
+						"available": [],
+						"component": []
+					},
+					"editor": {
+						"color": "#ffffff",
+						"group": "core",
+						"sort": 0,
+						"branch": 1,
+						"type": "Entity",
+						"origin": "",
+						"plugin": "Entity"
+					}
+				}
+			},
+			"8": {
+				"branch": 1,
+				"type": "Map",
+				"data": {
+					"name": "Empty",
+					"gridX": "32",
+					"gridY": "32",
+					"bgEntity": "6",
+					"editor": {
+						"color": "#ffffff",
+						"group": "ungrouped",
+						"sort": 0,
+						"branch": 1,
+						"type": "Map",
+						"origin": ""
+					},
+					"id": 8
+				},
+				"id": 8
+			},
+			"9": {
+				"id": 9,
+				"branch": 1,
+				"type": "Deploy",
+				"data": {
+					"name": "cocoon",
+					"branch": "1",
+					"full": 1,
+					"script": "",
+					"releasePath": "",
+					"zipFiles": true,
+					"cocoonJS": true,
+					"useClosureCompiler": false,
+					"audio": {
+						"mp3": true,
+						"ogg": false,
+						"m4a": false,
+						"wav": false
+					},
+					"closureCompiler": "",
+					"editor": {
+						"color": "#ffffff",
+						"group": "ungrouped",
+						"sort": 0,
+						"branch": 1,
+						"type": "Deploy",
+						"origin": "",
+						"plugin": "Deploy"
+					},
+					"id": 9
+				}
+			},
+			"10": {
+				"id": 10,
+				"branch": 1,
+				"type": "Deploy",
+				"data": {
+					"name": "web",
+					"branch": "1",
+					"full": 1,
+					"script": "",
+					"releasePath": "",
+					"zipFiles": false,
+					"cocoonJS": false,
+					"useClosureCompiler": false,
+					"audio": {
+						"mp3": false,
+						"ogg": true,
+						"m4a": true,
+						"wav": false
+					},
+					"closureCompiler": "",
+					"editor": {
+						"color": "#ffffff",
+						"group": "ungrouped",
+						"sort": 0,
+						"branch": 1,
+						"type": "Deploy",
+						"origin": "",
+						"plugin": "Deploy"
+					},
+					"id": 10
+				}
+			},
+			"11": {
+				"id": 11,
+				"branch": 1,
+				"type": "Texture",
+				"data": {
+					"type": "__enum__.Import.Resource.Type.ANIM_TEXTURE",
+					"id": 11,
+					"name": "digger_stand",
+					"date": 0,
+					"image": "digger_stand.png",
+					"width": 360,
+					"height": 90,
+					"editor": {
+						"color": "#ffffff",
+						"group": "assets",
+						"sort": 0,
+						"branch": 1,
+						"type": "Texture",
+						"origin": "",
+						"plugin": "Resource"
+					},
+					"fps": 9,
+					"numFrames": 4,
+					"numRows": 1
+				}
+			},
+			"12": {
+				"id": 12,
+				"branch": 1,
+				"type": "Texture",
+				"data": {
+					"type": "__enum__.Import.Resource.Type.ANIM_TEXTURE",
+					"id": 12,
+					"name": "digger_move",
+					"date": 0,
+					"image": "digger_move.png",
+					"width": 270,
+					"height": 90,
+					"editor": {
+						"color": "#ffffff",
+						"group": "assets",
+						"sort": 0,
+						"branch": 1,
+						"type": "Texture",
+						"origin": "",
+						"plugin": "Resource"
+					},
+					"fps": 9,
+					"numFrames": 3,
+					"numRows": 1
+				}
+			},
+			"13": {
+				"id": 13,
+				"branch": 1,
+				"type": "Texture",
+				"data": {
+					"type": "__enum__.Import.Resource.Type.TEXTURE",
+					"id": 13,
+					"name": "block_dirt",
+					"date": 0,
+					"image": "dirt.png",
+					"width": 64,
+					"height": 64,
+					"editor": {
+						"color": "#ffffff",
+						"group": "assets",
+						"sort": 0,
+						"branch": 1,
+						"type": "Texture",
+						"origin": "",
+						"plugin": "Resource"
+					}
+				}
+			}			
+		},
+		"sub": [],
+		"name": "root",
+		"parent": 0,
+		"id": 1
+	},
+	"__auto_inc": 14,
+	"__branch_id": 1
+}

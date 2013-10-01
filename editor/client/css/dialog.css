@@ -1,0 +1,253 @@
+.ui-dialog{
+	background-color: #282828;
+	border: 1px solid #161616;
+	max-height: 100%;
+	padding: 0;
+}
+
+.ui-dialog .ui-dialog-title{
+	font-family: arial,sans-serif;
+	float: none;
+	font-size: 12px;
+	color: #ebebeb;
+	line-height: 120%;
+	font-weight: bold;
+	display: inline-block;
+
+}
+.ui-dialog .ui-dialog-titlebar{
+	border-radius: 0;
+	padding: 10px 0 8px;
+	position: relative;
+	text-align: center;
+}
+.ui-dialog .ui-dialog-content{
+	background-color: rgba(255, 255, 255, 0.5);
+	padding: 6px 12px;
+}
+.ui-dialog .ui-dialog-titlebar .ui-dialog-titlebar-close{
+	width: 23px;
+	height: 24px;
+	background: url(icon-theme-blue/img/popup_close.png) no-repeat;
+	border: none !important;
+	padding: 0;
+	margin: 0;
+	position: absolute;
+    top: 7px;
+    right: 7px;
+}
+.ui-dialog .ui-dialog-titlebar-close span {background: none;}
+
+.ui-dialog .ui-dialog-buttonpane{
+	text-align: left;
+	border-width: 1px 0 0 0;
+	background-image: none;
+	margin: 0px 0 0 0;
+	padding: 0 2px;
+}
+.ui-dialog .ui-dialog-buttonpane .ui-state-hover, .ui-dialog .ui-dialog-buttonpane .ui-state-active {
+	/*margin: 0px 0 0 0;
+	padding: 0 15px;*/
+}
+.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset{
+	float: none;
+	text-align: center;
+	/* margin: 0 60px 0 0; */
+}
+.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset button, .largeButton{
+
+font-family: arial,sans-serif;
+padding: 5px 15px 5px 0;
+border: 1px solid rgba(0,0,0,0.6) !important;
+box-shadow: inset 0 1px 0 rgba(255,255,255,0.1) !important;
+
+min-width: 210px;
+padding: 5px 0;
+font-size: 14px;
+font-weight: normal;
+border-radius: 0;
+
+background: #4b4b4b; /* Old browsers */
+background: -moz-linear-gradient(top,  #4b4b4b 0%, #343434 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4b4b4b), color-stop(100%,#343434)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #4b4b4b 0%,#343434 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #4b4b4b 0%,#343434 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #4b4b4b 0%,#343434 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #4b4b4b 0%,#343434 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4b4b4b', endColorstr='#343434',GradientType=0 ); /* IE6-9 */
+
+	
+}
+.ui-dialog .upload .button {
+	color: #e0e0e0;
+	
+	background: #4b4b4b; /* Old browsers */
+	background: -moz-linear-gradient(top,  #4b4b4b 0%, #343434 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4b4b4b), color-stop(100%,#343434)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #4b4b4b 0%,#343434 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #4b4b4b 0%,#343434 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #4b4b4b 0%,#343434 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #4b4b4b 0%,#343434 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4b4b4b', endColorstr='#343434',GradientType=0 ); /* IE6-9 */
+}
+.ui-dialog .upload .button .gradient {
+	font-size: 12px;
+	padding: 4px 33px;
+}
+.ui-widget-overlay {
+	background: #000 50% 50% repeat-x; 
+	opacity: .70;filter:Alpha(Opacity=70);
+}
+
+
+#multiImport * {
+	line-height: 120%;
+}
+#multiImport .upload{
+	min-height: 200px;
+	border-top: solid 4px rgba(0, 0, 0, 0.5);
+	max-height: 400px;
+	/* overflow: auto; */
+    width: 100%;
+	padding: 0 12px;
+	margin: 59px 0 0 -12px;
+}
+#multiImport .qq-uploader {
+    width: 100%;
+	height: 100%;
+    position: absolute;
+    margin: 0 0 0 -12px;
+}
+#multiImport .qq-upload-button{
+	display: inline-block;
+	position: relative;
+	top: -50px;
+	left: 169px;
+}
+
+#multiImport .qq-upload-list{
+	position: absolute;
+	top: 0;
+	bottom: 164px;
+	overflow: auto;
+	height: auto;
+}
+#multiImport .qq-upload-list li{
+	position: relative;
+	height: 39px;
+	display: block;
+	width: 100%;
+	border-bottom: solid 1px rgba(0, 0, 0, 0.5);
+}
+#multiImport .qq-upload-success {background: url(icon-theme/img/ico_success.png) no-repeat 10px 7px;}
+#multiImport .qq-upload-fail {background: url(icon-theme/img/ico_warning.png) no-repeat 10px 7px;}
+#multiImport .qq-upload-proc{
+	background: none;
+}
+
+#multiImport .qq-upload-percents{
+	position: static;
+	font-size: 12px;
+	color: #fff;
+	text-shadow: none;
+	line-height: 120%;
+	display: inline-block;
+	width: auto;
+}
+#multiImport .qq-upload-file{
+	position: static;
+	left: 50px;
+	display: block;
+	padding: 4px 0 0 36px;
+	margin: 0;
+	line-height: 120%;
+}
+#multiImport .qq-upload-size{
+	position: static;
+	right: 20px;
+	width: auto;
+	bottom: auto;
+	color: #fff;
+	text-shadow: none;
+	padding: 0 10px 0 36px;
+	line-height: 120%;
+	display: inline-block !important;
+}
+#multiImport .qq-upload-failed-text, #multiImport .qq-upload-button span{
+	display: inline;
+}
+
+#multiImport .label, .newProjectPopup .label{
+	min-width: 150px;
+	display: inline-block;
+	padding: 3px 10px 5px 3px;
+	font-size: 13px;
+}
+
+.newProjectPopup .input{
+width: 435px;
+padding: 48px 0;
+margin: 0 auto;
+}
+.newProjectPopup .label{
+	min-width: 99px;
+}
+
+#multiImport .input{
+	padding: 3px;
+}
+.newProjectPopup .input{
+	padding: 48px 3px;
+}
+#multiImport .input input, #multiImport .input select,
+.newProjectPopup .input input, .newProjectPopup .input select{
+	background-color: #fff;
+	padding: 5px;
+	border-radius: 3px;
+	border: none;
+	font-family: Verdana;
+	font-size: 11.5px;
+	color: #333;
+	text-shadow: 0 0 1px rgba(0, 0, 1, 0.3);
+	margin: 0 -5px;
+	width: 150px;
+}
+.newProjectPopup .input input{
+background-color: rgba(255, 255, 255, 0.8);
+padding: 5px;
+border-radius: 3px;
+border: none;
+font-family: Verdana;
+font-size: 11.5px;
+color: #333;
+text-shadow: 0 0 1px rgba(0, 0, 1, 0.3);
+margin: 0 -5px;
+width: 300px;
+}
+
+
+
+
+
+.ui-error-dialog{
+z-index: 9999 !important;
+}
+.ui-button {z-index: 1;}
+
+.startingScreen .projectItem span.ui-icon {
+	background: url(icon-theme-blue/img/ui_folder_open.png) no-repeat 0 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

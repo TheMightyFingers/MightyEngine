@@ -1,0 +1,139 @@
+#mainMenu > div.resources{
+	background-image: url('img/textures.png');
+}
+
+.icon .unknown{
+	background-image: url('img/unknown.png');
+}
+
+.icon .system{
+	background-image: url('img/system.png');
+}
+
+.icon .sound,.icon .audio{
+	background-image: url('img/audio.png');
+}
+
+/*.icon .imagePreview{
+	background-image: url('img/image.png');
+}*/
+
+.controls > div{
+	width: 22px;
+	height: 22px;
+	background-position: 0 0;
+	background-color: #321;
+}
+.controls > div.playstop{
+	background-image: url('img/play.png');
+	border: #fff solid 1px;
+	border-radius: 5px;
+}
+
+#mainMenu li a{
+	height: 61px;
+	display: block;
+	position: relative;
+	border-top: 1px solid rgba(255,255,255,0.1);
+	border-bottom: 1px solid rgba(0,0,0,0.4);
+	background: url(btn_sprite.png) no-repeat 0 0;
+}
+
+#mainMenu li a:hover, #mainMenu li a.active{background-color: rgba(0,0,0,0.3);}
+
+#mainMenu li a span {display: block;width: 100%;position: absolute;top: 42px;font-family: arial,sans-serif;font-size: 10.5px;color: #dbdbdb;text-align: center;letter-spacing: 0;text-shadow: none;pointer-events: none;}
+#mainMenu li a:hover span, #mainMenu li a.active span {color: #4ed8f7;}
+/* #mainMenu li a:hover{
+	border:1px solid #000;
+	box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.1);
+}
+ #mainMenu .active{
+	border:1px solid #000;
+	box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.1);
+	padding: 1px;
+	margin: -1px;
+	padding-left: 5px;
+	margin-left: 2px;
+	-webkit-transition: 100ms;
+} */
+
+#mainMenu li #Texture {background-position: 50% 15px;}
+#mainMenu li #SourceEditor {background-position: 50% -1092px;}
+#mainMenu li #Sound {background-position: 50% -47px;}
+#mainMenu li #Brush {background-position: 50% -110px;}
+#mainMenu li #Component {background-position: 50% -172px;}
+#mainMenu li #Entity {background-position: 50% -236px;}
+#mainMenu li #Addon {background-position: 50% -299px;}
+#mainMenu li #Plugin {background-position: 50% -360px;}
+#mainMenu li #i18n {background-position: 50% -417px;}
+#mainMenu li #Map {background-position: 50% -481px;}
+
+#mainMenu li #data {background-position: 50% ;}
+#mainMenu li #dialogs, #mainMenu li #Template {background-position: 50% 0;}
+
+#mainMenu li #Texture:hover, #mainMenu li #Texture.active {background-position: 50% -535px;}
+#mainMenu li #SourceEditor:hover, #mainMenu li #SourceEditor.active {background-position: 50% -1153px;}
+#mainMenu li #Sound:hover, #mainMenu li #Sound.active {background-position: 50% -597px;}
+#mainMenu li #Brush:hover, #mainMenu li #Brush.active {background-position: 50% -660px;}
+#mainMenu li #Component:hover, #mainMenu li #Component.active {background-position: 50% -722px;}
+#mainMenu li #Entity:hover, #mainMenu li #Entity.active {background-position: 50% -786px;}
+#mainMenu li #Addon:hover, #mainMenu li #Addon.active {background-position: 50% -849px;}
+#mainMenu li #Plugin:hover, #mainMenu li #Plugin.active {background-position: 50% -910px;}
+#mainMenu li #i18n:hover, #mainMenu li #i18n.active {background-position: 50% -967px;}
+#mainMenu li #Map:hover, #mainMenu li #Map.active {background-position: 50% -1031px;}
+
+
+.moveLeft{
+	background: url(img/arrow_left.png) 7px 50% no-repeat;
+	width: 20px;
+	height: 35px;
+	float: left;
+	border-right: 1px solid rgba(0,0,0,0.4);
+}
+.moveRight{
+	background: url(img/arrow_right.png) 50% 50% no-repeat;
+	width: 20px;
+	height: 35px;
+	float: right;
+	border-left: 1px solid rgba(255,255,255,0.1);
+	border-right: 1px solid rgba(0,0,0,0.4);
+}
+
+#deploy{
+	background-image: url(img/deploy.png);
+	background-position: 95% 50%;
+	background-repeat: no-repeat;
+}
+
+
+#mapTools .select{
+	background-image: url(img/map_arrow.png);
+}
+#mapTools .delete{
+	background-image: url(img/map_erase.png);
+}
+#mapTools .move{
+	background-image: url(img/map_resize.png);
+}
+#mapTools .rotate{
+	background-image: url(img/map_reload.png);
+}
+
+
+._map #mapTools .select{
+	cursor: url(img/map_arrow.png), auto;
+}
+._map #mapTools .delete{
+	cursor: url(img/map_erase.png), auto;
+}
+._map #mapTools .move{
+	cursor: url(img/map_resize.png), auto;
+}
+._map #mapTools .rotate{
+	cursor: url(img/map_reload.png), auto;
+}
+
+#topBar .wrap {background: url("nav_ico.png") no-repeat 26px 2px;}
+
+.layers_btns .layer.n0 span {background-image: url(img/layer_ico1.png);}
+.layers_btns .layer.n1 span {background-image: url(img/layer_ico2.png);}

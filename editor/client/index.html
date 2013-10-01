@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Editor</title>
+	
+	<link rel="stylesheet" href="css/custom-theme/jquery-ui-1.8.18.custom.css" type="text/css" media="all" />
+	
+	<link rel="stylesheet" href="css/fileMenu.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="css/otito.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="css/dialog.css" type="text/css" media="all" />
+
+	<link rel="stylesheet" href="css/icon-theme-blue/icons.css" type="text/css" media="all" />
+	
+	<link rel="stylesheet" href="css/main.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="css/colorpicker/jquery.colorpicker.css" type="text/css" media="all" />
+	<script>
+		document.domain = window.location.hostname;
+	</script>
+
+	<script type="text/javascript" src="MightyEditor.js"></script>
+</head>
+<body class="infoBottom">
+	<span id="info"></span>
+	
+	<div id="topBar">
+		<div class="wrap"><span class="logo"></span><div id="fileMenu" class="topMenu"></div></div>
+		<div class="topMenu" id="deployMenu">
+			<ul class="right">
+				<li id="deploy">
+					<a href="deploy">Deploy</a>
+					<ul>
+						<li><a href="">xxx</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		
+		<div class="right"><a href="export" id="export">Export</a></div>
+		<div class="right"><a href="playGame" id="playGame">Open Game</a></div>
+		
+	</div>
+
+	<div id="mainMenu"></div>
+
+	<div id="mainLeft">
+		<div id="helperButtons">
+			<div id="newAsset" class="button"><div class="gradient">New Asset</div></div>
+		</div>
+		<div id="contentToSave"></div>
+	</div>
+
+	<div id="mainRight" class="ui-widget">
+		<div id="groupAndSearch">
+			<div id="newGroup"><div>+</div></div> <!-- NEW GROUP -->
+			<div id="changeView"><div>[ - ]</div></div> <!-- changeView -->
+			<div id="searchBox">
+				<input id="search" type="text" placeholder="Search asset"/>
+				<div><span></span></div>
+			</div>
+			<div id="groups"></div>
+		</div>
+		<div id="iconWrapper">
+			<div id="iconContainer"></div>
+		</div>
+	</div>
+
+	<div id="mapWrapper">
+		<iframe id="mapFrame" src="about:blank"></iframe>
+		<div id="mapTools"></div> <!-- map pogas -->
+		
+		<div class="layers_wrap"> <!-- layer pogas -->
+			<div class="layers_tittle">Layers</div>
+			<div class="layers_btns">
+				<span class="layer n0"><span></span></span>
+				<span class="layer n1"><span></span></span>
+				<div class="clear"></div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="loading">
+		<div class="text"></div>
+	</div>
+	<div id="notifyHolder"></div>
+	
+</body>
+</html>
