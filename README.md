@@ -1,4 +1,26 @@
-====== FEATURES =====
+====== ABOUT MIGHTYENGINE ======
+
+MightyEngine is a Javascript HTML5 based cross-platform 2D game engine, that allows you to develop AAA quality 2D games.
+
+====== OUR GOALS ======
+
+High performance.
+- Speed is important, therefore we strive to achieve the top perfomance that JavaScript can provide and we're continuously updating the engine to take advantage of the lastest technology that's available for the web and native platforms.
+
+Content management and tools.
+- The Engine comes with it's own content managment tools and libraries to help you to create games from start to finish without you spending time to develop and support your own infrastructure. We are also trying to support a multi-user development experience.
+
+Easy deployment.
+- Deploy different versions of the game on different servers or locations with just one click of a button.
+
+Regular updates and fixes.
+- We are planning to launch regular updates about every two weeks with new content and fixes. Our goal is make your experience with every update better and to provide you with tools to make your work even more productive.
+
+Modular code.
+- MightyEngine is engineered so you can extend every bit of functionality by using plugins, addons and components. The plugins can be added and removed without impacting the rest of your code. 
+
+
+====== FEATURES ======
 
 Mobile
 
