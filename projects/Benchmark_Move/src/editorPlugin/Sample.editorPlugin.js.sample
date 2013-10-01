@@ -1,0 +1,27 @@
+Mighty(
+	Mighty.plugin.Sample = function(){
+		this.newAssetTitle = "New Sample Item";
+	},
+	{
+	register: function(){
+		this.content.plugins.SideMenu.registerMenu({
+			sample: {
+				title: "Sample",
+				action: "Sample",
+				link: "Sample"
+			}
+		},-1);
+	},
+	inputs: {
+		id: {
+			_type: "hidden"
+		},
+	   name: {
+			_type: "string"
+		},
+		someParam: {
+			_type: "String",
+			placeholder: "Enter name"
+		}
+	}
+}).extend(Mighty.EditorPlugin); 

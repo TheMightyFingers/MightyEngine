@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=0.6667, user-scalable=no" />
+
+		<title>Untitled :: MightyEngine</title>
+
+		<link rel="shortcut icon" href="assets/ui/img/favicon.ico" />
+		<link rel="stylesheet" type="text/css" href="assets/ui/css/style.css" />
+	</head>
+
+	<body>
+		<div id="view">
+			<div id="blankScreen">
+				<div class="logo"></div>
+			</div>
+
+			<div id="mightyError" class="alert error closeable border-4 glow-shadow">
+				<div class="alert-inner">
+					<div class="alert-message">
+						<p class="title"><strong><a name="form-errors"> </a>The following errors have occurred:</strong></p>
+						<ul></ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="src/debug.js"></script>
+		<script type="text/javascript" src="engine/library/editor.js"></script>
+		<script type="text/javascript" src="/socket.io/socket.io.js"></script>
+
+		<script src="engine/MightyLoader.js"></script>
+	</body>
+</html>

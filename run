@@ -1,0 +1,25 @@
+#!/bin/bash
+
+
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )";
+cd "$DIR";
+
+#fx some execution permission problems on *nix
+chmod -R +x editor/server/bin
+
+#try to stop if running
+./stop 2> /dev/null
+
+(
+echo "starting";
+npm install;
+echo <<EOF
+EOF
+
+) | zenity --progress --pulsate --no-cancel --width 400 \
+--title="MightyEngine" --text="Checking node modules.. please wait!"  --auto-kill --auto-close 2> /dev/null
+
+cd "editor/server"
+
+node "./server.js";
+

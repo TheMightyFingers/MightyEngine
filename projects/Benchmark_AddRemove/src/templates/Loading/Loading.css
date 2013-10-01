@@ -1,0 +1,24 @@
+#view-Loading {
+    position:absolute;
+    z-index:10000;
+    width: 100%;
+    top: 100%;
+    margin-top: -18px;
+}
+
+#view-Loading .generic_progress_bar {
+    position:relative;
+    height: 7px;
+    background: #acaaae;
+    left: 0;
+    right: 0;
+    margin-left: 14px;
+    margin-right: 14px;
+}
+
+#view-Loading .generic_progress_bar .progress {
+    position:absolute;
+    height:100%;
+    width:0%;
+    background: #353131;
+}

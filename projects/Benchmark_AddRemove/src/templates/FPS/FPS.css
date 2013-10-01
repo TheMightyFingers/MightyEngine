@@ -1,0 +1,10 @@
+#view-FPS {
+    padding: 8px;
+    position: absolute;
+    background-color: rgb(20,20,20); opacity: 0.90;
+    color: white;
+    text-align: center;
+    z-index: 9000;
+    bottom: 0;
+    margin: 3px;
+}

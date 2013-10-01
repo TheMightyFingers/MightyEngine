@@ -1,0 +1,1 @@
+XXX.Manager = Plugin.extend({});

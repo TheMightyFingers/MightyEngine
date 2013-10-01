@@ -1,0 +1,12 @@
+{
+	"name": "MightyEditor",
+	"description": "Mighty engine editor part",
+	"author": "Mighty Fingers, ltd",
+	"dependencies": {
+		"socket.io": ">= 0.9",
+		"zip": ">= 1.0",
+		"node-native-zip": ">= 1.0"
+	},
+	"engine": "node 0.8.1",
+	"version": "0.9.5"
+}
