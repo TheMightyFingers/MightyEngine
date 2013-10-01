@@ -1,3 +1,8 @@
+====== INSTALLATION ======
+
+http://docs.mightyfingers.com/manual/installation/3
+
+
 ====== ABOUT MIGHTYENGINE ======
 
 MightyEngine is a Javascript HTML5 based cross-platform 2D game engine, that allows you to develop AAA quality 2D games.
