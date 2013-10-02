@@ -135,7 +135,6 @@ Scene.Default = Scene.Base.extend
 
 	isCollision: function()
 	{
-		console.log("chck");
 		// Check if snake is going out of level bounds.
 		if(this.snake.gridX < 0 || this.snake.gridY < 0 ||
 			this.snake.gridX >= this.gridSizeX || this.snake.gridY >= this.gridSizeY)
