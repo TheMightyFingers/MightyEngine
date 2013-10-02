@@ -382,7 +382,7 @@
 				"data": {
 					"id": 15,
 					"name": "Editor",
-					"disabled": false,
+					"disabled": 1,
 					"useInEditor": true,
 					"useEditor": false,
 					"disallowDuplicates": true,
@@ -391,12 +391,13 @@
 						"group": "Core",
 						"type": "Plugin",
 						"origin": "Core",
-						"branch": 1
+						"branch": 1,
+						"color": "#ff0000"
 					}
 				},
 				"id": 15,
-				"type": "Plugin",
-				"branch": 1
+				"branch": 1,
+				"type": "Plugin"
 			},
 			"16": {
 				"id": 16,
