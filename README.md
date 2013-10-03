@@ -16,7 +16,7 @@ MightyEngine is a Javascript HTML5 based cross-platform 2D game engine, that all
 5. [Check features](http://docs.mightyfingers.com/manual/features/34)
 
 ## License
-For non-commercial - free. [Attribution-NonCommercial 3.0 Unported](http://creativecommons.org/licenses/by-nc/3.0/)
+For non-commercial - free. [Attribution 3.0 Unported](http://creativecommons.org/licenses/by/3.0/deed.en_US)
 
 ## Company
 [MightyFingers LTD](http://mightyfingers.com/) - http://mightyfingers.com/
