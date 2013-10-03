@@ -100,7 +100,9 @@ body{
 	position: absolute;
 	top: 33px;
 	left: 0;
-	bottom: 25px;
+	bottom: 0;
+	overflow-y: hidden;
+
 }
 ._map #mapWrapper{
 position: absolute;
@@ -377,7 +379,6 @@ div.icon .image > div.branch{
 
 	width: 70px;
 	background-color: rgba(0, 0, 0, 0.25);
-	height: 100%;
 	top: 56px;
 	position: absolute;
 	z-index: 1;
@@ -613,6 +614,7 @@ top: 1px;
 }
 #changeView{
 	right: 263px;
+	white-space: nowrap;
 }
 
 
@@ -2456,7 +2458,7 @@ border-radius: 4px;
 	position: absolute;
 	top: 0;
 	left: 0;
-
+	background-color: #4d4d4d;
 	cursor: pointer;
 }
 
@@ -2682,6 +2684,12 @@ right: 0;
 }
 
 
-
+#mainMenu a {
+-webkit-user-drag: none !important;
+-moz-user-drag: none !important;
+-o-user-drag: none !important;
+-ms-user-drag: none !important;
+user-drag: none !important;
+}
 
 
