@@ -2,10 +2,10 @@
 ======
 MightyEngine is a Javascript HTML5 based cross-platform 2D game engine, that allows you to develop high quality cross-platform 2D games.
 
-![alt tag](http://mightyfingers.com/wp-content/themes/mighty_theme_dark/images/dungeon.png)
-![alt tag](http://mightyfingers.com/wp-content/themes/mighty_theme_dark/images/mightydigger.png)
-![alt tag](http://mightyfingers.com/wp-content/themes/mighty_theme_dark/images/123123.png)
-![alt tag](http://mightyfingers.com/wp-content/themes/mighty_theme_dark/images/editor.png)
+![alt tag](http://mightyfingers.com/showcase/thumb_01.png)
+![alt tag](http://mightyfingers.com/showcase/thumb_02.png)
+![alt tag](http://mightyfingers.com/showcase/thumb_03.png)
+![alt tag](http://mightyfingers.com/showcase/thumb_04.png)
 
 ## Getting Started
 
