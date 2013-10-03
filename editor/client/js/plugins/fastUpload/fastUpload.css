@@ -1,0 +1,73 @@
+.fastUpload{
+	width: 100%;
+	height: 100%;
+}
+
+.fastUpload .qq-upload-button input{
+	height: 1px;
+}
+.fastUpload .qq-upload-drop-area{
+	display: block;
+	background-color: rgba(0,0,0,0.9);
+	text-align: center;
+	line-height: 50vh; 
+}
+
+.fastUpload .qq-upload-list{
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	list-style: none;
+	height: auto;
+	top: auto;
+}
+.fastUpload .qq-upload-list li{
+	background-color: rgba(0,0,0,0.5);
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 24px;
+	overflow: hidden;
+	border-left: 1px solid #111;
+	margin-left: -1px;
+}
+
+
+.fastUpload .qq-upload-list .qq-upload-success{
+	display: none;
+}
+.fastUpload .qq-upload-list .qq-upload-file{
+	display: inline;
+	font-size: 16px;
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	line-height: 25px;
+	text-shadow: 2px 2px 3px black;
+}
+.fastUpload .qq-upload-list .qq-upload-size{
+	left: 0;
+	width: 10%;
+	top: 0;
+	text-shadow: 2px 2px 3px black;
+	font-size: 11px;
+	line-height: 25px;
+	color: #57f;
+}
+.fastUpload .qq-upload-list .qq-upload-cancel{
+	line-height: 37px;
+	right: 10px;
+	text-shadow: 2px 2px 3px black;
+}
+.fastUpload .qq-upload-list .qq-upload-percents{
+	right: 30px;
+	left: auto;
+	width: 10%;
+	font-size: 16px;
+	top: 0;
+	line-height: 25px;
+	text-shadow: 2px 2px 3px black;
+}
+
+
+

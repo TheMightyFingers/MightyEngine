@@ -1,0 +1,98 @@
+#mainMenu > div.resources{
+	background-image: url('img/textures.png');
+}
+
+.icon .unknown{
+	background-image: url('img/unknown.png');
+}
+
+.icon .system{
+	background-image: url('img/system.png');
+}
+
+.icon .sound,.icon .audio{
+	background-image: url('img/audio.png');
+}
+
+/*.icon .imagePreview{
+	background-image: url('img/image.png');
+}*/
+
+.controls > div{
+	width: 22px;
+	height: 22px;
+	background-position: 0 0;
+	background-color: #321;
+}
+.controls > div.playstop{
+	background-image: url('img/play.png');
+	border: #fff solid 1px;
+	border-radius: 5px;
+}
+
+#Brush{
+	background: url(img/main_brushes.png) 50% 50% no-repeat; 
+}
+#Component{
+	background: url(img/main_components.png) 50% 50% no-repeat;
+}
+#data{ 
+	background: url(img/main_data.png) 50% 50% no-repeat; 
+}
+#dialogs, #Template{
+	background: url(img/main_dialog.png) 50% 50% no-repeat; 
+}
+#Map{ 
+	background: url(img/main_map.png) 50% 50% no-repeat; 
+} 
+#Texture{ 
+	background: url(img/main_textures.png) 50% 50% no-repeat; 
+}
+#Sound{ 
+	background: url(img/main_sounds.png) 50% 50% no-repeat; 
+} 
+#Addon{ 
+	background: url(img/main_addons.png) 50% 50% no-repeat; 
+}
+#i18n{ 
+	background: url(img/main_i18n.png) 50% 50% no-repeat; 
+}
+#Plugin{
+	background: url(img/main_plugins.png) 50% 50% no-repeat;
+}
+#Entity{
+	background: url(img/main_entity.png) 50% 50% no-repeat;
+}
+
+.moveLeft{
+	background: url(img/arrow_left.png) 50% 50% no-repeat;
+	width: 21px;
+	height: 26px;
+	float: left;
+}
+.moveRight{
+	background: url(img/arrow_right.png) 50% 50% no-repeat;
+	width: 21px;
+	height: 26px;
+	float: right;
+}
+
+#deploy{
+	background-image: url(img/deploy.png);
+	background-position: 95% 50%;
+	background-repeat: no-repeat;
+}
+
+
+#mapTools .select{
+	background-image: url("img/map_arrow.png");
+}
+#mapTools .delete{
+	background-image: url("img/map_erase.png");
+}
+#mapTools .move{
+	background-image: url("img/map_resize.png");
+}
+#mapTools .rotate{
+	background-image: url("img/map_reload.png");
+}
