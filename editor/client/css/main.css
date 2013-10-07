@@ -804,6 +804,7 @@ div.icon:hover .controls > div{
 }
 ._map #contentToSave{
 	top: 108px;
+	position: static;
 }
 
 #helperButtons{
