@@ -24,6 +24,9 @@ Mighty(
 		this.editor = new Mighty.plugins.SourceEditor[cfg.sourceEditorBackend](this);
 		
 		this.saveCBs = [];
+		
+		
+		this.loadIndex = true;
 	},
 	{
 		addSaveCb: function(cb){
@@ -95,6 +98,13 @@ Mighty(
 			else{
 				$("#helperButtons").append(this.butt);
 				$("#helperButtons").append(this.hotkeysMenu);
+			}
+			
+			if(this.loadIndex){
+				var files = Object.keys(this.items.map);
+				
+				this.selectFile(files[files.length-1]);
+				this.loadIndex = false;
 			}
 		},
 		
@@ -305,10 +315,7 @@ Mighty(
 				}
 			);
 			
-			
-			
 			var that = this;
-			
 			var $tpl = $("<div></div>");
 			$tpl.dialog({
 				title: _("Create_new_file"),
@@ -374,7 +381,7 @@ Mighty(
 				tmp = orderBuffer[k];
 				oo = obj;
 				
-				for(var f=5; f<tmp.length; f++){
+				for(var f=4; f<tmp.length; f++){
 					if( oo[tmp[f]] == void(0) ){
 						var ll = this.getLinkLoc(tmp);
 						
@@ -425,6 +432,8 @@ Mighty(
 			return obj;
 		}
 		,selectFile: function(fileName){
+			console.log(fileName);
+			
 			if(this.activeElement){
 				this.activeElement.style.fontWeight = null;
 			}

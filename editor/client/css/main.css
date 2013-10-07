@@ -795,8 +795,17 @@ div.icon:hover .controls > div{
 }
 
 #contentToSave{
-
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 35px;
+	bottom: 0;
+	overflow: auto;
 }
+._map #contentToSave{
+	top: 108px;
+}
+
 #helperButtons{
 	/*position: relative;
 	overflow-x: hidden;
@@ -2684,7 +2693,7 @@ right: 0;
 }
 
 
-#mainMenu a {
+a{
 -webkit-user-drag: none !important;
 -moz-user-drag: none !important;
 -o-user-drag: none !important;

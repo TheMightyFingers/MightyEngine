@@ -461,7 +461,7 @@
 				"data": {
 					"id": 18,
 					"name": "Editor",
-					"disabled": 1,
+					"disabled": false,
 					"useInEditor": true,
 					"useEditor": false,
 					"disallowDuplicates": true,
@@ -470,13 +470,12 @@
 						"group": "Core",
 						"type": "Plugin",
 						"origin": "Core",
-						"branch": 1,
-						"color": "#ff0000"
+						"branch": 1
 					}
 				},
 				"id": 18,
-				"branch": 1,
-				"type": "Plugin"
+				"type": "Plugin",
+				"branch": 1
 			},
 			"19": {
 				"data": {

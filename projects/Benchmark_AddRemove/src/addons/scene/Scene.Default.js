@@ -12,7 +12,7 @@ Scene.Default = Scene.Base.extend
 	{
 		mighty.Template.init();
 		mighty.Template.create("Loading");
-		mighty.Template.create("FPS").show();
+		//mighty.Template.create("FPS").show();
 	},
 
 

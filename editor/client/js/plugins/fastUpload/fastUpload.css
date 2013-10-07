@@ -2,6 +2,10 @@
 	width: 100%;
 	height: 100%;
 }
+.fastUpload .qq-upload-button{
+	margin-right: 20px;
+}
+
 
 .fastUpload .qq-upload-button input{
 	height: 1px;
@@ -11,6 +15,9 @@
 	background-color: rgba(0,0,0,0.9);
 	text-align: center;
 	line-height: 50vh; 
+}
+.fastUpload .qq-upload-drop-area..qq-upload-drop-area-active{
+	display: block;
 }
 
 .fastUpload .qq-upload-list{
@@ -34,7 +41,7 @@
 
 
 .fastUpload .qq-upload-list .qq-upload-success{
-	display: none;
+	display: none !important;
 }
 .fastUpload .qq-upload-list .qq-upload-file{
 	display: inline;
@@ -68,6 +75,16 @@
 	line-height: 25px;
 	text-shadow: 2px 2px 3px black;
 }
+.ondrag .fastUpload .qq-upload-drop-area{
+	display: block !important;
+}
+.ondrag .fastUpload{
+	position: relative;
+	z-index: 9;
 
+}
+.ondrag .icon{
+	z-index: 0; 
+}
 
 
