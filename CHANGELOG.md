@@ -15,11 +15,11 @@ v1.1.0
 * Updated Texture API to support many different ways to create and use texture.
 
 ## Fixed in engine:
-* Issue with Entity.Geometry.load() could be called to soon if created from template.
+* Issue that Entity.Geometry.load() in some cases is called too soon if created from template.
 * Issue that manually loaded texture had a wrong path.
 * Fixed Scene.reloadLevel().
-* Fixed all issues with calculating volume for scaled/rotated entities.
+* Fixed all issue with volume calculations when entity is scaled or rotated.
 
 ## Fixed in editor:
-* Auto reconnect if disconnected from Node.js.
+* Auto reconnect if disconnected from Node.js server.
 * Issue that could crash editor server if game was launched with "Open Game" button.
