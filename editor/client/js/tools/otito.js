@@ -808,7 +808,9 @@ var ImportType = {
 			
 			this.input.cbs = [];
 			this.input.setValue = function(val){
-				this.value = val;
+				if(this.value !== val){
+					this.value = val;
+				}
 				that.object[key] = that.normalizeInput(meta, this.value);
 				
 				for(var i in this.cbs){

@@ -94,6 +94,9 @@ Mighty(
 					that.showHotkeys();
 				});
 				
+				this.backBtn = $(Templates.button({text:_("btn_back"), id: "sourceEditorBackBtn"}));
+				
+				
 			}
 			else{
 				$("#helperButtons").append(this.butt);
@@ -438,6 +441,10 @@ Mighty(
 				this.activeElement.style.fontWeight = null;
 			}
 			this.activeElement = this.items.elements[fileName];
+			if(!this.activeElement){
+				return;
+			}
+			
 			this.activeElement.style.fontWeight = "bold";
 			
 			this.activeFile = fileName;

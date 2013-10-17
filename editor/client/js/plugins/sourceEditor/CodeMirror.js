@@ -224,6 +224,8 @@ Mighty(
 		,focus: function(){
 			this.editor.focus();
 		}
+		
+		,lastFileToLoad: ""
 		,loadSource: function(fileName){
 			if(this.docs[fileName]){
 				this.editor.swapDoc(this.docs[fileName]);
@@ -240,18 +242,27 @@ Mighty(
 			}
 			
 			Mighty.requireFile("js/plugins/sourceEditor/cm/mode/"+mode+"/"+mode+".js");
+			that.docs[fileName] = CodeMirror.Doc(that.sourceEditor.items.map[fileName], mode);
+			
+			this.lastFileToLoad = fileName;
+			
 			Mighty.loader.onReady(function(){
-				that.docs[fileName] = CodeMirror.Doc(that.sourceEditor.items.map[fileName], mode);
+				if(that.lastFileToLoad !== fileName && that.lastFileToLoad !== ""){
+					return;
+				}
 				that.editor.mode = mode;
+				that.editor.focus();
+				that.updateHints();
+				that.editor.swapDoc(that.docs[fileName]);
+				
 				that.docs[fileName].on('change', function(e) {
 					var val = that.editor.getValue();
 					that.sourceEditor.onSourceChanged(fileName, val);
 				});
-				that.editor.swapDoc(that.docs[fileName]);
-				that.editor.focus();
+				
 				
 				that.editor.matchBrackets();
-				that.updateHints();
+				
 			});
 		}
 		,knownModes: {

@@ -804,6 +804,7 @@ div.icon:hover .controls > div{
 }
 ._map #contentToSave{
 	top: 108px;
+	position: static;
 }
 
 #helperButtons{
@@ -1923,6 +1924,18 @@ font-size: 11px;
 	position: relative;
 	color: #e0e0e0;
 }
+.startingScreen .mainLinks span.usage {
+	bottom: 0px;
+	position: absolute;
+	left: -23px;
+	padding: 0 0 0 38px;
+	font-size: 10px;
+	line-height: 16px;
+}
+.startingScreen .mainLinks span.usage input{
+	margin: 2px;
+}
+
 
 .startingScreen .mainLinks .upload .qq-upload-list{
 	display: none !important;
@@ -2701,4 +2714,8 @@ a{
 user-drag: none !important;
 }
 
-
+#contentToSave .multipleItems{
+	padding: 5px;
+	background-color: rgba(0,0,0,0.5);
+	margin: 2px 0;
+}
