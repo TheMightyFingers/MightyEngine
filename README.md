@@ -1,4 +1,4 @@
-[MightyEngine](http://mightyfingers.com/) BETA v1.0
+[MightyEngine](http://mightyfingers.com/) BETA v1.1
 ======
 MightyEngine is a Javascript HTML5 based cross-platform 2D game engine, that allows you to develop high quality cross-platform 2D games.
 
