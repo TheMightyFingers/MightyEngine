@@ -15,7 +15,7 @@ v1.1.0
 
 ## Fixed in engine:
 * Issue with Entity.Geometry.load() could be called to soon if created from template.
-* Issue that manually loaded textures did had wrong path.
+* Issue that manually loaded texture had a wrong path.
 * Fixed Scene.reloadLevel().
 * Fixed all issues with calculating volume for scaled/rotated entities.
 
