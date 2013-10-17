@@ -5,7 +5,7 @@ v1.1.0
 * Added [Entity.Particle](http://docs.mightyfingers.com/api/entityparticle/28]).
 * Added [UI editor](http://docs.mightyfingers.com/manual/ui-editor/35).
 * Added experimental support for WebGL.
-* Added css scaling for improving or degrading performance/output quality.
+* Added ability to change output quality.
 
 ## Improvements:
 * Improved performance for entity.move() function.
