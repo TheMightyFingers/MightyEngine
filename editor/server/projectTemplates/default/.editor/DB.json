@@ -236,8 +236,8 @@
 					"cocoonJS": true,
 					"useClosureCompiler": false,
 					"audio": {
-						"mp3": true,
-						"ogg": false,
+						"mp3": false,
+						"ogg": true,
 						"m4a": false,
 						"wav": false
 					},

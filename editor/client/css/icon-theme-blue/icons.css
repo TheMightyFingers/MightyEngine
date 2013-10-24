@@ -40,8 +40,10 @@
 }
 
 #mainMenu li a:hover, #mainMenu li a.active{background-color: rgba(0,0,0,0.3);}
+#mainMenu ul ul li a:hover, #mainMenu ul ul li a.active{background-color: transparent;}
 
 #mainMenu li a span {display: block;width: 100%;position: absolute;top: 42px;font-family: arial,sans-serif;font-size: 10.5px;color: #dbdbdb;text-align: center;letter-spacing: 0;text-shadow: none;pointer-events: none;}
+#mainMenu ul ul li a span {position: relative;}
 #mainMenu li a:hover span, #mainMenu li a.active span {color: #4ed8f7;}
 /* #mainMenu li a:hover{
 	border:1px solid #000;
@@ -67,6 +69,8 @@
 #mainMenu li #Plugin {background-position: 50% -360px;}
 #mainMenu li #i18n {background-position: 50% -417px;}
 #mainMenu li #Map {background-position: 50% -481px;}
+#mainMenu li #UI {background-position: 50% 10px;}
+#mainMenu li #UI-widgets {background-position: 50% 10px; }
 
 #mainMenu li #data {background-position: 50% ;}
 #mainMenu li #dialogs, #mainMenu li #Template {background-position: 50% 0;}
@@ -81,6 +85,8 @@
 #mainMenu li #Plugin:hover, #mainMenu li #Plugin.active {background-position: 50% -910px;}
 #mainMenu li #i18n:hover, #mainMenu li #i18n.active {background-position: 50% -967px;}
 #mainMenu li #Map:hover, #mainMenu li #Map.active {background-position: 50% -1031px;}
+#mainMenu li #UI:hover, #mainMenu li #UI.active {background-position: 50% -540px;}
+#mainMenu li #UI-widgets:hover, #mainMenu li #UI-widgets.active {background-position: 50% -540px;}
 
 
 .moveLeft{

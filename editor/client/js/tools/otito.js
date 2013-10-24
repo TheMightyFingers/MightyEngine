@@ -249,7 +249,9 @@ var ImportType = {
 					}
 					
 					var val =  tmp || meta.value || keys[0];
+					//console.log("item new Value:",val);
 					var ret = this.normalizeInput(meta, val);
+					//console.log("item normalized value:",ret);
 					return ret;//this.normalizeInput(meta, val);
 				}
 				

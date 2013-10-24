@@ -1,7 +1,7 @@
 v1.1.1
 ======
 
-## Festures:
+## Features:
 * Added particle demo project.
 * Added outlines options for [Entity.Text](http://docs.mightyfingers.com/api/entitytext/27).
 * Added improved ability to switch inputs on CocoonJS between WebView and Canvas.
@@ -13,6 +13,7 @@ v1.1.1
 * Fixed broken this.ui.setStyle().
 * Fixed broken UI onShow/onHide on CocoonJS.
 * Fixed UI not loading on iOS on CocoonJS.
+* Changed mighty.engine.bgColor to setter and getter.
 
 v1.1.0
 ======
