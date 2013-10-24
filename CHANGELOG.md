@@ -1,3 +1,19 @@
+v1.1.1
+======
+
+## Festures:
+* Added particle demo project.
+* Added outlines options for [Entity.Text](http://docs.mightyfingers.com/api/entitytext/27).
+* Added improved ability to switch inputs on CocoonJS between WebView and Canvas.
+* Added run.exe for Windows users to improve easiness to launch editor on Node.js.
+
+## Improvements:
+* Improved stability for particles.
+* Fixed issues with sound on CocoonJS.
+* Fixed broken this.ui.setStyle().
+* Fixed broken UI onShow/onHide on CocoonJS.
+* Fixed UI not loading on iOS on CocoonJS.
+
 v1.1.0
 ======
 
