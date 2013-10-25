@@ -19,6 +19,9 @@ Scene.Default = Scene.Base.extend
 		this.particle.texture = new Resource.Texture();
 		this.particle.texture.load("http://mightyfingers.com/tutorial/gfx/particle.png");
 		Entity.plugin.add(this.particle);
+		
+		this.tStart = Date.now();
+		this.chnParticle = CreateChannel("Particle");		
 
 		if(mighty.editor) { return; }
 
@@ -148,9 +151,6 @@ Scene.Default = Scene.Base.extend
 			prevLoadPreset.call(self.particle, preset);
 			self.updateUI();
 		};
-
-		this.tStart = Date.now();
-		this.chnParticle = CreateChannel("Particle");
 	},
 
 
