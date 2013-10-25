@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>UI Editor</title>
+
+  <link rel="stylesheet" href="libs/jquery-ui/css/smoothness/jquery-ui-1.10.2.custom.css"/>
+  <!-- <link rel="stylesheet" href="../../../css/custom-theme/jquery-ui-1.8.18.custom.css"/> -->
+
+  <link rel="stylesheet" href="css/main.css"/>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+
+  <link rel="stylesheet" href="libs/jquery.colorpicker/jquery.colorpicker.css"/>
+  <script src="libs/jquery.colorpicker/jquery.colorpicker.js"></script>
+
+  <link rel="stylesheet" href="../../../css/otito.css"/>
+<!--  <link rel="stylesheet" href="../../../css/main.css"/> -->
+
+  <script src="../../tools/tools.js"></script>
+  <script src="../../tools/otito.js"></script>
+
+  <!-- <link rel="stylesheet" href="../../jquery/jquery-contextMenu/jquery.contextMenu.css"/> -->
+  <script src="../../jquery/jquery-ui-contextmenu/jquery.ui-contextmenu.js"></script>
+
+<!--
+  <script src="../../jquery/jquery.latest.min.js"></script>
+  <script src="../../jquery/jquery-ui-1.8.18.custom.min.js"></script>
+-->
+  <script src="libs/class.js"></script>
+  <script src="classes/Widget.js"></script>
+  <script src="classes/PanelWidget.js"></script>
+  <script src="classes/LabelWidget.js"></script>
+  <script src="classes/ButtonWidget.js"></script>
+  <script src="classes/SubtemplateWidget.js"></script>
+  <script src="classes/Editor.js"></script>
+
+  <script>
+    var editor = null;
+
+    $(function()
+    {
+      document.domain = 'localhost';
+      editor = new uieditor.Editor();
+    });
+  </script>
+
+</head>
+<body>
+  <div id="top-wrap">
+
+    <div id="widgets">
+	    <div class="txt_elem"></div>
+      <span class="widget-btn w-panel">Panel</span>
+      <span class="widget-btn w-label">Text</span>
+      <span class="widget-btn w-button">Button</span>
+
+      &nbsp; &nbsp; &nbsp;
+
+<!--
+      <span class="cv_title">Custom widget:</span>
+
+      <select id="widget-select"></select>
+      <span class="widget w-subtemplate" style="display:none">Widget</span>
+-->
+      <div id="ws-wrap" style="display:inline-block;width:350px;height:50px;position:relative;top:-4px"></div>
+
+      <span class="widget-btn w-subtemplate" style="display:none">Widget</span>
+
+      <select id="widget-select" type="list" style="display:none">
+        <option value="1">abc</option>
+        <option value="2">def</option>
+      </select>
+
+<!--
+      <div style='display:inline-block;position:relative;top:-30px'>
+        <div class="test-w">TEST-W</div>
+      </div>
+-->
+
+      <!--
+      <span class="custom_select ">
+        <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
+        <input title="" class="custom-combobox-input ui-widget ui-widget-content ui-state-default ui-corner-left ui-autocomplete-input" autocomplete="off" />
+        <a tabindex="-1" class="cs_arrow" title="Show All Items"><span></span></a>
+      </span>
+-->
+
+    </div>
+
+
+    <div id="top-right">
+      <span class="btn edit-css">Edit CSS</span>
+      <span class="btn edit-js">Edit JS</span>
+
+      <label><input type="checkbox" /> Preview</label>
+      <!-- <br/>
+      Preview template:
+      <a href="#" id="gen-html-base">Base</a>
+      <a href="#" id="gen-html-custom">Custom</a> -->
+
+<!--
+	  <span class="vt_title">View Template:</span>
+	  <span class="custom_select ">
+		<span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
+		<input title="" class="custom-combobox-input ui-widget ui-widget-content ui-state-default ui-corner-left ui-autocomplete-input" autocomplete="off" />
+		<a tabindex="-1" class="cs_arrow" title="Show All Items"><span></span></a>
+	  </span>
+-->
+
+    </div>
+    <div class="clear"></div>
+  </div>
+
+  <div id="workarea">
+    <div class="wrap">
+
+    </div>
+  </div>
+
+  <div id="uieditor-overlay-wrap">
+    <canvas id="uieditor-overlay"></canvas>
+  </div>
+
+  <div id="dialog-panel" class="dialog">
+    <div id="tabs-panel">
+      <ul>
+        <li><a href="#panel-basic">Main</a></li>
+        <li><a href="#panel-styles">Styles</a></li>
+      </ul>
+
+      <div id="panel-basic"></div>
+      <div id="panel-styles"></div>
+    </div>
+  </div>
+
+  <div id="dialog-label" class="dialog">
+    <div id="tabs-label">
+      <ul>
+        <li><a href="#label-basic">Main</a></li>
+        <li><a href="#label-styles">Styles</a></li>
+      </ul>
+
+      <div id="label-basic"></div>
+      <div id="label-styles"></div>
+    </div>
+  </div>
+
+  <div id="dialog-button" class="dialog">
+    <div id="tabs-button">
+      <ul>
+        <li><a href="#button-basic">Main</a></li>
+        <li><a href="#button-styles">Styles</a></li>
+      </ul>
+
+      <div id="button-basic"></div>
+      <div id="button-styles"></div>
+    </div>
+  </div>
+
+  <div id="anchor_align" style="display:none">
+    <div class="input anchor_align_x" style="display:none">
+      <select name="anchor_align_x">
+        <option value="top">Top</option>
+        <option value="middle">Middle</option>
+        <option value="bottom">Bottom</option>
+      </select>
+    </div>
+
+    <div class="input anchor_align_y" style="display:none">
+      <select name="anchor_align_y">
+        <option value="left">Left</option>
+        <option value="center">Center</option>
+        <option value="right">Right</option>
+      </select>
+    </div>
+  </div>
+
+  <div id="align_custom" style="display:none">
+    <div class="align-grid">
+      <div class="row">
+        <div class="box" data-pos="left_top" title="Left top"></div>
+        <div class="box active" data-pos="center_top" title="Center top"></div>
+        <div class="box" data-pos="right_top" title="Right top"></div>
+      </div>
+      <div class="row">
+        <div class="box" data-pos="left_middle" title="Left middle"></div>
+        <div class="box" data-pos="middle" title="Middle"></div>
+        <div class="box" data-pos="right_middle" title="Right middle"></div>
+      </div>
+      <div class="row">
+        <div class="box" data-pos="left_bottom" title="Left bottom"></div>
+        <div class="box" data-pos="center_bottom" title="Center bottom"></div>
+        <div class="box" data-pos="right_bottom" title="Right bottom"></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="uploader">
+    <div class="upload" style="display:inline-block"></div>
+    <div class="bg_image_preview" style="display:none; margin-top:5px; margin-bottom:5px">
+      <a href="#" class="remove-bg">Remove</a><br/>
+      <img src="" alt="" style="width:150px"/>
+    </div>
+  </div>
+  
+
+	<div class="panel_opts">
+		<div class="top_line">
+			<div class="opts_title">Panel Options</div>
+			<div class="opts_close"></div>
+		</div>
+
+		<div class="opts_group">
+			<div class="opts">
+				<label>Width</label>
+				<div class="input"><input type="txt" /></div>
+				<span class="custom_select w_26">
+					<span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
+					<input title="" class="custom-combobox-input ui-widget ui-widget-content ui-state-default ui-corner-left ui-autocomplete-input" autocomplete="off" />
+					<a tabindex="-1" class="cs_arrow" title="Show All Items"><span></span></a>
+				</span>
+				
+				<div class="clear"></div>
+			</div>
+			<div class="opts">
+				<label>Height</label>
+				<div class="input"><input type="txt" /></div>
+				<span class="custom_select w_26">
+					<span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
+					<input title="" class="custom-combobox-input ui-widget ui-widget-content ui-state-default ui-corner-left ui-autocomplete-input" autocomplete="off" />
+					<a tabindex="-1" class="cs_arrow" title="Show All Items"><span></span></a>
+				</span>
+				
+				<div class="clear"></div>
+			</div>
+			<div class="opts">
+				<label>Align to anchor:</label>
+				<span class="custom_select">
+					<span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
+					<input title="" class="custom-combobox-input ui-widget ui-widget-content ui-state-default ui-corner-left ui-autocomplete-input" autocomplete="off" />
+					<a tabindex="-1" class="cs_arrow" title="Show All Items"><span></span></a>
+				</span>
+				
+				<div class="clear"></div>
+			</div>
+		</div>
+
+		<div class="opts_group">
+			<div class="opts">
+				<label>Class</label>
+				<div class="input w_163"><input type="txt" /></div>
+				
+				<div class="clear"></div>
+			</div>
+			<div class="opts">
+				<label>Data-click</label>
+				<div class="input w_163"><input type="txt" /></div>
+				
+				<div class="clear"></div>
+			</div>
+			<div class="opts">
+				<label>Data-var</label>
+				<div class="input w_163"><input type="txt" /></div>
+				
+				<div class="clear"></div>
+			</div>
+		</div>
+
+		<div class="opts_group opts_upload">
+			<div class="opts">
+				<label>Background image:</label>
+				<div class="upload_wrap">
+					<div class="button">Upload</div>
+					<input type="file" name="img" />
+				</div>
+			</div>
+		</div>
+
+		<div class="opts_group opts_btns">
+			<div class="button">Update</div>
+			<div class="button">Delete</div>
+			<div class="button">Cancel</div>
+		</div>
+	</div>
+
+
+</body>
+</html>
