@@ -21,3 +21,5 @@ MightyEngine is a Javascript HTML5 based cross-platform 2D game engine, that all
 
 ## Company
 [MightyFingers LTD](http://mightyfingers.com/) - http://mightyfingers.com/
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/TheMightyFingers/mightyengine/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
