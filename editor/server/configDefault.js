@@ -1,19 +1,26 @@
 this.config = {
-	port: 8080,
-	host: null, // host or IP
 	
-	demoMode: false,
+	// host or IP
+	// null - server will listen on all interfaces
+	host: null,
+	port: 8080,
+	
+	// set false if you are running from dedicated server
 	openBrowser: true,
 	
+	// sets symlink to engine
+	// set false if you want always use latest engine version
 	useSymlinks: true,
-	useBuildInWatcher: true,
-	watcherPollingTime: 1000,
-	//do not change
+	
+	// editor client files
+	// and projects path will be filed in later
+	// do not change
 	webRoot: ["../client", null],
 	
-	ffmpegPath: "bin/ffmpeg.exe",
+	// 
 	googleClosurePath: "",
 	
+	// known mimes
 	mimes: {
 		"html": "text/html",
 		"js": "text/javascript",
@@ -23,27 +30,51 @@ this.config = {
 		"mighty": "application/mighty"
 	},
 	
-	
-	defaultProjectTemplate: "default",
-	newProjectTemplates: "projectTemplates",
+	// temporary files will be stored here and cleaned up on startup
 	tmpPath: "tmp",
 	
+	// path where all projects located
+	projectsPath: "../../projects",
+	
+	// default project config
+	project: {
+		//this file is placed in {project}/this.editorPath
+		configFile: "config.js",
+		// paths relative to project root
+		paths: {
+			assets: "assets",
+			deploy: "assets/deploy",
+			release: "release",
+			editor: ".editor",
+			engine: "engine",
+			
+			plugins: [{
+				path: "src/plugins",
+				origin: "project"
+			}],
+			
+			addons: [{
+				path: "src/addons",
+				origin: "project"
+			}]
+		}
+	},
+	
+	
+	// project templates path TODO
+	newProjectTemplates: "projectTemplates",
+	defaultProjectTemplate: "default",
+	
+		
+	useBuildInWatcher: true,
+	watcherPollingTime: 1000,
+	// watching paths for code changes
+	// relative to this file
 	watchingPaths: ["../../share", "../../engine", "storeCache"],
-	projectPath: "../../projects",
-	projectExtension: "mighty",
 	
-	//project paths - relative to project
-	deployPath: "assets/deploy",
-	releasePath: "release",
-	assetsPath: "assets",
 	
-	editorPath: ".editor",
-	enginePath: "engine",
 	
-	//this file is placed in {project}/this.editorPath
-	projectConfigFile: "config.js",
-	
-	//shared plugins goes first as project plugins may depend on them
+	// shared plugins
 	pluginsPaths:[
 		{
 			path: "../../editor/server/storeCache/plugins",
@@ -52,13 +83,9 @@ this.config = {
 		{
 			path: "../../share/plugins",
 			origin: "Share"
-		},
-		{
-			path: "src/plugins",
-			origin: "project"
 		}
 	],
-	
+	// shared addons
 	addonsPaths: [
 		{
 			path: "../../editor/server/storeCache/addons",
@@ -67,22 +94,21 @@ this.config = {
 		{
 			path: "../../share/addons",
 			origin: "Share"
-		},
-		{
-			path: "src/addons",
-			origin: "project"
 		}
 	],
-	
+	// where to find hook scripts
 	deployHooksPaths: ["../../share/hooks", "src/hooks"],
 	
-	engineSrcPath: "../../engine",
+	// engine path stuff - relative to engine
+	engine: {
+		srcPath: "../../engine",
+		pluginsPath: "plugins"
+	},
 	
-	//engine path stuff - relative to engine
-	enginePluginsPath: "plugins",
-	
-	//almost hardcoded stuff
-	noEmptyValue:["Map"],
+	autoFixConfigChanges: true,
+	// almost hardcoded stuff - do not change!!!
+	// plugins with zero item List
+	emptyList:["Map"],
 	
 	pluginType: "Plugin",
 	addonType: "Addon",
@@ -111,8 +137,13 @@ this.config = {
 			"/engine/MightyEngine.js",
 			"/src/main.js"
 		]
-	}
+	},
 	
+	// fallback audio converter on windows
+	ffmpegPath: "bin/ffmpeg.exe",
+	
+	// run in demo mode - disable some features
+	demoMode: false
 };
 
-this.config.webRoot[1] = this.config.projectPath;
+this.config.webRoot[1] = this.config.projectsPath;

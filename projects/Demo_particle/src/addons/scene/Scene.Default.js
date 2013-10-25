@@ -20,6 +20,8 @@ Scene.Default = Scene.Base.extend
 		this.particle.texture.load("http://mightyfingers.com/tutorial/gfx/particle.png");
 		Entity.plugin.add(this.particle);
 
+		if(mighty.editor) { return; }
+
 		var data = {};
 		data.play = function() {
 			if(self.particle.isPaused) { self.particle.play(); }
@@ -43,7 +45,7 @@ Scene.Default = Scene.Base.extend
 		var element = this.gui.add(data, "play").name("Pause");
 		element.onChange(function()
 		{
-			if(!particle.isPaused) {
+			if(!self.particle.isPaused) {
 				element.name("Play");
 			}
 			else {

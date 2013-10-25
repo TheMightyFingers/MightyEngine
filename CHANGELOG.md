@@ -3,7 +3,7 @@ v1.1.1
 
 ## Features:
 * Added particle demo project.
-* Added outlines options for [Entity.Text](http://docs.mightyfingers.com/api/entitytext/27).
+* Added options for text outline for [Entity.Text](http://docs.mightyfingers.com/api/entitytext/27).
 * Added improved ability to switch inputs on CocoonJS between WebView and Canvas.
 * Added run.exe for Windows users to improve easiness to launch editor on Node.js.
 
