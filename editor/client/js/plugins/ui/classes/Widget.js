@@ -150,7 +150,7 @@ uieditor.Widget = Class.extend({
 
 });
 
-uieditor.Widget.css_fields = 'color font-family font-size font-weight background-image background-color background-position background-size background-repeat margin padding cursor line-height text-transform border-width border-style border-color border-radius position left top right bottom display white-space'.split(' ');
+uieditor.Widget.css_fields = 'color font-family font-size font-weight background-image background-color background-position background-size background-repeat margin padding cursor line-height text-transform border-width border-style border-color border-radius position left top right bottom display white-space text-align overflow'.split(' ');
 
 uieditor.Widget.initStylesTab = function(widgetclass, wrap)
 {
@@ -222,6 +222,11 @@ uieditor.Widget.initStylesTab = function(widgetclass, wrap)
         _reverse: true
       },
       'line-height': { _type: 'text' },
+      'text-align': {
+        _type: 'list',
+        use: ['', 'left', 'right', 'center', 'justify'],
+        _reverse: true
+      },
       'text-transform': {
         _type: 'list',
         use: ['', 'none', 'capitalize', 'uppercase', 'lowercase', 'inherit'],
@@ -235,6 +240,11 @@ uieditor.Widget.initStylesTab = function(widgetclass, wrap)
       'white-space': {
         _type: 'list',
         use: ['', 'normal', 'nowrap', 'pre', 'pre-line', 'pre-wrap', 'inherit'],
+        _reverse: true
+      },
+      'overflow': {
+        _type: 'list',
+        use: ['', 'auto', 'hidden', 'visible', 'scroll', 'inherit'],
         _reverse: true
       }
     }

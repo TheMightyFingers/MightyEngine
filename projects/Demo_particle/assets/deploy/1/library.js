@@ -277,7 +277,8 @@ var Entity = window.Entity = {
 				"isPickable": false,
 				"gridSizeX": 1,
 				"gridSizeY": 1,
-				"useGrid": true
+				"useGrid": true,
+				"isRandFrame": false
 			},
 			"footer": {
 				"available": [],
@@ -299,7 +300,8 @@ var Entity = window.Entity = {
 				"isPickable": false,
 				"gridSizeX": 1,
 				"gridSizeY": 1,
-				"useGrid": true
+				"useGrid": true,
+				"isRandFrame": false
 			},
 			"footer": {
 				"available": [],
@@ -476,9 +478,10 @@ var Resource = window.Resource = {
 			"type": 0,
 			"width": 64,
 			"height": 64,
+			"date": 1383145795000,
+			"preload": true,
 			"group": "core",
-			"ext": "png",
-			"date": 1373973067000
+			"ext": "png"
 		},
 		{
 			"id": 2,
@@ -486,9 +489,10 @@ var Resource = window.Resource = {
 			"type": 0,
 			"width": 90,
 			"height": 45,
+			"date": 1383145795000,
+			"preload": true,
 			"group": "core",
-			"ext": "png",
-			"date": 1373973067000
+			"ext": "png"
 		},
 		{
 			"id": 3,
@@ -496,20 +500,22 @@ var Resource = window.Resource = {
 			"type": 0,
 			"width": 64,
 			"height": 64,
+			"date": 1383145795000,
+			"preload": true,
 			"group": "core",
-			"ext": "png",
-			"date": 1373973067000
+			"ext": "png"
 		},
 		{
 			"type": 1,
 			"id": 11,
 			"name": "digger_stand",
-			"date": 1380539446000,
+			"date": 1383145795000,
 			"width": 360,
 			"height": 90,
 			"fps": 9,
 			"numFrames": 4,
 			"numRows": 1,
+			"preload": true,
 			"group": "assets",
 			"ext": "png"
 		},
@@ -517,12 +523,13 @@ var Resource = window.Resource = {
 			"type": 1,
 			"id": 12,
 			"name": "digger_move",
-			"date": 1380539446000,
+			"date": 1383145795000,
 			"width": 270,
 			"height": 90,
 			"fps": 9,
 			"numFrames": 3,
 			"numRows": 1,
+			"preload": true,
 			"group": "assets",
 			"ext": "png"
 		},
@@ -530,9 +537,10 @@ var Resource = window.Resource = {
 			"type": 0,
 			"id": 13,
 			"name": "block_dirt",
-			"date": 1380539446000,
+			"date": 1383145795000,
 			"width": 64,
 			"height": 64,
+			"preload": true,
 			"group": "assets",
 			"ext": "png"
 		}
@@ -682,7 +690,7 @@ var Server = window.Server = {
 		"LEVEL_DATA_FAILED": 3
 	},
 	"Cfg": {
-		"id": 32,
+		"id": 34,
 		"name": "Server",
 		"disabled": false,
 		"useInEditor": true,
@@ -690,11 +698,12 @@ var Server = window.Server = {
 		"offlineMode": false,
 		"path": "server",
 		"useSocket": true,
-		"group": "Demo_Particle"
+		"group": "Demo_particle"
 	}
 };
 var Plugin = window.Plugin = {
 	"palette": [
+		"Server",
 		"Server"
 	],
 	"Cfg": {
@@ -723,6 +732,23 @@ var Deploy = window.Deploy = {
 			"name": "scene",
 			"disabled": false,
 			"group": "Demo_Particle"
+		},
+		{
+			"id": 34,
+			"name": "Server",
+			"disabled": false,
+			"useInEditor": true,
+			"port": 8081,
+			"offlineMode": false,
+			"path": "server",
+			"useSocket": true,
+			"group": "Demo_particle"
+		},
+		{
+			"id": 35,
+			"name": "scene",
+			"disabled": false,
+			"group": "Demo_particle"
 		}
 	]
 };
