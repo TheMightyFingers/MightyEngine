@@ -88,6 +88,11 @@ Mighty(
     $(this.wrapper).css({'position': 'absolute', 'left': 0, top: 0, right: 0, bottom: 0, /*background: 'red',*/ zIndex: 1000 });
   },
 
+  itemChanged: function()
+  {
+
+  },
+
   clickItem: function(item, element){
     this._clickItem(item);
 
@@ -139,7 +144,7 @@ Mighty(
 
   onsave_cb: null,
 
-  saveItem: function(item, plugin){
+  saveItem: function(item, cb){
     var self = this;
 
     if (item.id && this.editor){
@@ -152,12 +157,12 @@ Mighty(
         item.normal_name = data.normal_name;
         item.html_info = data.html_info;
 
-        self._saveItem(item, plugin);
+        self._saveItem(item, null, true);
         if (self.onsave_cb) self.onsave_cb();
       });
     }
     else {
-      this._saveItem(item, plugin);
+      this._saveItem(item, null);
       if (self.onsave_cb) self.onsave_cb();
     }
 

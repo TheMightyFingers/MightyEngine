@@ -13,6 +13,7 @@
 					"width": 64,
 					"height": 64,
 					"date": 0,
+					"preload": true,
 					"editor": {
 						"color": "#ffffff",
 						"group": "core",
@@ -36,6 +37,7 @@
 					"width": 90,
 					"height": 45,
 					"date": 0,
+					"preload": true,
 					"editor": {
 						"color": "#ffffff",
 						"group": "core",
@@ -58,6 +60,7 @@
 					"width": 64,
 					"height": 64,
 					"date": 0,
+					"preload": true,
 					"editor": {
 						"color": "#ffffff",
 						"group": "core",
@@ -417,7 +420,8 @@
 						"showError": true,
 						"showWarning": true
 					},
-					"version": "__enum__.Import.Engine.Version.1_0_0",
+					"version": "__enum__.Import.Engine.Version.1_1_0",
+					"clearColor": "#555555",
 					"editor": {
 						"group": "Core",
 						"type": "Plugin",
