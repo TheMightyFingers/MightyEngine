@@ -4,6 +4,11 @@
 /*
 todo:
 
+
+- guardian shop sataisīt funkcionālu
+  * pamēģināt itemus dizainot kā atsevišķus widgetus, kurus runtimā var iespraust esošā templeitā
+
+----------
 - paneļu resize handles
 - source editors priekš custom.css / custom.js
 - bug: pozicionēšana + auto dimensijas dažos gadījumos nestrādā
@@ -532,6 +537,10 @@ uieditor.Editor = Class.extend({
     }
 
     uieditor.Widget.setOtitoValues(w.getClass().css_otito, w.options.css);
+
+    if (w.is_panel) {
+      uieditor.Widget.setOtitoValues(w.getClass().html_otito, w.options);
+    }
 
     $('#dialog-'+ w.type+' .ui-tabs').tabs('option', 'active', 0);
     $('#dialog-'+ w.type)

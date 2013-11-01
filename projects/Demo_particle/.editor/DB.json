@@ -10,6 +10,10 @@
 					"name": "null",
 					"type": "__enum__.Import.Resource.Type.TEXTURE",
 					"image": "null.png",
+					"width": 64,
+					"height": 64,
+					"date": 0,
+					"preload": true,
 					"editor": {
 						"color": "#ffffff",
 						"group": "core",
@@ -18,9 +22,7 @@
 						"type": "Texture",
 						"origin": "",
 						"plugin": "Resource"
-					},
-					"width": 64,
-					"height": 64
+					}
 				}
 			},
 			"2": {
@@ -32,6 +34,10 @@
 					"name": "null_iso",
 					"type": "__enum__.Import.Resource.Type.TEXTURE",
 					"image": "null_iso.png",
+					"width": 90,
+					"height": 45,
+					"date": 0,
+					"preload": true,
 					"editor": {
 						"color": "#ffffff",
 						"group": "core",
@@ -39,9 +45,7 @@
 						"branch": 1,
 						"type": "Texture",
 						"plugin": "Resource"
-					},
-					"width": 90,
-					"height": 45
+					}
 				}
 			},
 			"3": {
@@ -53,6 +57,10 @@
 					"name": "error",
 					"type": "__enum__.Import.Resource.Type.TEXTURE",
 					"image": "62.png",
+					"width": 64,
+					"height": 64,
+					"date": 0,
+					"preload": true,
 					"editor": {
 						"color": "#ffffff",
 						"group": "core",
@@ -61,9 +69,7 @@
 						"type": "Texture",
 						"origin": "",
 						"plugin": "Resource"
-					},
-					"width": 64,
-					"height": 64
+					}
 				}
 			},
 			"4": {
@@ -150,7 +156,8 @@
 						"isPickable": false,
 						"gridSizeX": 1,
 						"gridSizeY": 1,
-						"useGrid": true
+						"useGrid": true,
+						"isRandFrame": false
 					},
 					"footer": {
 						"available": [],
@@ -185,7 +192,8 @@
 						"isPickable": false,
 						"gridSizeX": 1,
 						"gridSizeY": 1,
-						"useGrid": true
+						"useGrid": true,
+						"isRandFrame": false
 					},
 					"footer": {
 						"available": [],
@@ -298,6 +306,10 @@
 					"image": "digger_stand.png",
 					"width": 360,
 					"height": 90,
+					"fps": 9,
+					"numFrames": 4,
+					"numRows": 1,
+					"preload": true,
 					"editor": {
 						"color": "#ffffff",
 						"group": "assets",
@@ -306,10 +318,7 @@
 						"type": "Texture",
 						"origin": "",
 						"plugin": "Resource"
-					},
-					"fps": 9,
-					"numFrames": 4,
-					"numRows": 1
+					}
 				}
 			},
 			"12": {
@@ -324,6 +333,10 @@
 					"image": "digger_move.png",
 					"width": 270,
 					"height": 90,
+					"fps": 9,
+					"numFrames": 3,
+					"numRows": 1,
+					"preload": true,
 					"editor": {
 						"color": "#ffffff",
 						"group": "assets",
@@ -332,10 +345,7 @@
 						"type": "Texture",
 						"origin": "",
 						"plugin": "Resource"
-					},
-					"fps": 9,
-					"numFrames": 3,
-					"numRows": 1
+					}
 				}
 			},
 			"13": {
@@ -350,6 +360,7 @@
 					"image": "dirt.png",
 					"width": 64,
 					"height": 64,
+					"preload": true,
 					"editor": {
 						"color": "#ffffff",
 						"group": "assets",
@@ -784,6 +795,43 @@
 				"id": 33,
 				"type": "Addon",
 				"branch": 1
+			},
+			"34": {
+				"data": {
+					"id": 34,
+					"name": "Server",
+					"disabled": false,
+					"useInEditor": true,
+					"port": 8081,
+					"offlineMode": false,
+					"path": "server",
+					"useSocket": true,
+					"editor": {
+						"group": "Demo_particle",
+						"type": "Plugin",
+						"origin": "Demo_particle",
+						"branch": 1
+					}
+				},
+				"id": 34,
+				"type": "Plugin",
+				"branch": 1
+			},
+			"35": {
+				"data": {
+					"id": 35,
+					"name": "scene",
+					"disabled": false,
+					"editor": {
+						"group": "Demo_particle",
+						"type": "Addon",
+						"origin": "Demo_particle",
+						"branch": 1
+					}
+				},
+				"id": 35,
+				"type": "Addon",
+				"branch": 1
 			}
 		},
 		"sub": [],
@@ -791,6 +839,6 @@
 		"parent": 0,
 		"id": 1
 	},
-	"__auto_inc": 34,
+	"__auto_inc": 36,
 	"__branch_id": 1
 }
