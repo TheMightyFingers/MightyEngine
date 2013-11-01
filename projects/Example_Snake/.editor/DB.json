@@ -13,6 +13,7 @@
 					"width": 64,
 					"height": 64,
 					"date": 0,
+					"preload": true,
 					"editor": {
 						"color": "#ffffff",
 						"group": "core",
@@ -36,6 +37,7 @@
 					"width": 90,
 					"height": 45,
 					"date": 0,
+					"preload": true,
 					"editor": {
 						"color": "#ffffff",
 						"group": "core",
@@ -58,6 +60,7 @@
 					"width": 64,
 					"height": 64,
 					"date": 0,
+					"preload": true,
 					"editor": {
 						"color": "#ffffff",
 						"group": "core",
@@ -307,6 +310,10 @@
 					"image": "digger_stand.png",
 					"width": 360,
 					"height": 90,
+					"fps": 9,
+					"numFrames": 4,
+					"numRows": 1,
+					"preload": true,
 					"editor": {
 						"color": "#ffffff",
 						"group": "assets",
@@ -315,10 +322,7 @@
 						"type": "Texture",
 						"origin": "",
 						"plugin": "Resource"
-					},
-					"fps": 9,
-					"numFrames": 4,
-					"numRows": 1
+					}
 				}
 			},
 			"12": {
@@ -333,6 +337,10 @@
 					"image": "digger_move.png",
 					"width": 270,
 					"height": 90,
+					"fps": 9,
+					"numFrames": 3,
+					"numRows": 1,
+					"preload": true,
 					"editor": {
 						"color": "#ffffff",
 						"group": "assets",
@@ -341,10 +349,7 @@
 						"type": "Texture",
 						"origin": "",
 						"plugin": "Resource"
-					},
-					"fps": 9,
-					"numFrames": 3,
-					"numRows": 1
+					}
 				}
 			},
 			"13": {
@@ -359,6 +364,7 @@
 					"image": "dirt.png",
 					"width": 64,
 					"height": 64,
+					"preload": true,
 					"editor": {
 						"color": "#ffffff",
 						"group": "assets",
@@ -483,7 +489,7 @@
 					"name": "Engine",
 					"disabled": false,
 					"useInEditor": true,
-					"version": "__enum__.Import.Engine.Version.1_0_0",
+					"version": "__enum__.Import.Engine.Version.1_1_0",
 					"tUpdateDelta": 33.3,
 					"tSleep": 16.6,
 					"isDebug": false,

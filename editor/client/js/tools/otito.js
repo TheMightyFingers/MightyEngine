@@ -1,4 +1,10 @@
 "use strict";
+if(typeof Server == "object"){
+	console.log = Server.debug;
+	console.error = Server.error;
+}
+
+
 var ImportType = {
 	bool: "bool",
 	boolean: "boolean",
@@ -103,7 +109,7 @@ var ImportType = {
 			ret = ret[uarr[i]];
 		}
 		if(ret == void(0)){
-			console.error("Failed to resolve ", use);
+			//console.error("Failed to resolve ", use);
 			return {};
 		}
 		return ret;
@@ -920,7 +926,7 @@ var ImportType = {
 			}
 			
 			this.parentNode = parent || this.html.parentNode;
-			if(oldHtml != void(0)){
+			if(oldHtml != void(0) &&  this.html.parentNode){
 				//if(this.html.parentNode){
 					parent.replaceChild(this.html, oldHtml);
 					this.html.className = oldHtml.className;

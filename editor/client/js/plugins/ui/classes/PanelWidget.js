@@ -34,7 +34,8 @@ uieditor.PanelWidget = uieditor.Widget.extend({
       data_click: '',
       data_var: '',
       bg_image: '',
-      as_margin: false
+      as_margin: false,
+      html: ''
     };
 
     if (custom_panel)
@@ -1307,6 +1308,10 @@ uieditor.PanelWidget.initDialog = function()
         panelw.options.css = {};
         uieditor.Widget.getOtitoValues(panelw.getClass().css_otito, panelw.options.css);
 
+        var opt = {};
+        uieditor.Widget.getOtitoValues(panelw.getClass().html_otito, opt);
+        panelw.options.html = opt.html;
+
         if (align_old != panelw.options.align)
         {
           panelw.unlink();
@@ -1417,14 +1422,16 @@ uieditor.PanelWidget.initDialog = function()
 
   uieditor.PanelWidget.otito = otito;
 
-  uieditor.Widget.otitoInitForm(otito, {
-    //copy_option_value: true
-  });
-
+  uieditor.Widget.otitoInitForm(otito, {});
   uieditor.PanelWidget.otitoInitForm(otito, wrap);
 
-//  window.parent.MightyEditor.ui.improveOtito(otito);
 
+  var otito2 = new Otito({}, {
+    html: { _type: 'textarea', rows: 7 }
+  });
+
+  otito2.append($('#panel-html')[0]);
+  uieditor.PanelWidget.html_otito = otito2;
 };
 
 uieditor.PanelWidget.otitoInitForm = function(otito, wrap)
