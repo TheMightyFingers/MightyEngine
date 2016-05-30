@@ -3,9 +3,9 @@
 	"description": "Mighty engine editor part",
 	"author": "Mighty Fingers, ltd",
 	"dependencies": {
-		"socket.io": ">= 0.9",
-		"zip": ">= 1.0",
-		"node-native-zip": ">= 1.0"
+		"socket.io": "= 0.9.14",
+		"zip": "= 1.1",
+		"node-native-zip": "= 1.1"
 	},
 	"engine": "node 0.8.1",
 	"version": "0.9.5"
